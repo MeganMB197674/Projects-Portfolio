@@ -1,0 +1,50 @@
+<!-- Megan Boyer-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Here is the link to connect the CSS file with the HTML file.-->
+    <link rel="stylesheet" href="EscapeRoomGame.CSS">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Game</title>
+    <!--This script tag lets the programmer know that we are in JavaScript and not HTML-->
+    <!-- Also links the JavaScript file to the HTML.-->
+    <script src="EscapeRoomGame.js"> </script> 
+</head>
+<h1> 
+<!-- This is our game title displayed at the top of the screen to the players.-->
+Escape Room
+</h1>
+<h2>
+<!-- This is where the players will find the game instructions-->
+    Instructions:
+</h2>
+<body>
+<p>
+<!-- Explanation of game rules and instructions-->
+Two or more players are locked into a room and are given two six-sided dice each. 
+Each player will roll their dice at the same time and find the sum of their dice, then the security lock (our program), will generate a random number.
+If a player's sum matches the security door number, they are allowed to escape and win the game. Last player locked in loses!
+<br> <br> <br> <br> <br>
+</p>
+<!-- Below are our div tags, which transfer the results to the HTML from our .JS file to be displayed.-->
+<div id=Die1Results></div>
+<div id=Die2Results></div>
+<div id=SumResults></div>
+<div id=FinalResults></div>
+<div id=DoorLockResults></div>
+<!-- Below is our button to start the game. When pressed, the button will carry out the function "EscapeRoom."-->
+<button type="button" onclick="EscapeRoom()" style="color: maroon; border-radius: 200px;"> Play </button>
+<p>
+<br><br><br><br><br><br><br>
+<!--Summary of skills displayed within program.-->
+The functionality of this program represents my ability to use inline and external CSS, library functions, 
+<br> such as the random number generator (Math.random()) in JavaScript, and code/use conditional statements.
+</p>
+<nav>
+    <!--Navigation link back to the landing page, formatted as a button.-->
+    <button style="border-radius: 200px;"><a href="Index.html">Back to home page</a></button>
+</nav>
+</body>
+</html>

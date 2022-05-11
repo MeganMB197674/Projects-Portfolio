@@ -1,0 +1,29 @@
+h1{
+    text-align-last: center;
+    color:maroon;
+    font-family: fantasy;
+    font-style: italic;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .4px;
+}
+h2{
+    text-align: center;
+    font-family:fantasy;
+    font-size: 130%;
+    color: black;
+    -webkit-text-stroke-color: maroon;
+    -webkit-text-stroke-width: .4px;
+}
+p {
+    text-align: center;
+    color:white;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width:.5px;
+}
+body {
+    background-image: url(ScaryHouse.jpg); 
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border-color: maroon;
+}

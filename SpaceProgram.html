@@ -1,0 +1,226 @@
+<!-- Megan Boyer --> <!DOCTYPE html>
+
+<!--Here we style the HTML using inline CSS.-->
+<html style= "background-image: linear-gradient(180deg, white,rgb(41, 185, 96)); background-repeat: no-repeat; background-size: 110%;" 
+lang="en">
+<head> 
+<!--Here we style header one using inline CSS.-->
+<h1 style="background: -webkit-linear-gradient(rgb(26, 100, 11), rgb(26, 100, 11)); -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; text-shadow: -3px -3px 1px rgb(41, 185, 96); font-family:fantasy; font-style: italic; 
+font-weight:lighter; text-align:top left;">
+        <!--Here, breaks are added so that the text does not overlap with the Space Program logo.-->
+        <br> <br> <br> <br> <br> <br> <br>
+        <!-- Here we have our header one, which displays the title of the content at the top of the page.-->
+      UAT Space Program
+</h1>
+<!--Summary of skills displayed within program.-->
+<p style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+This program showcases my ability to implement arrays to update data points, use JavaScript functions
+    from multiple sources, and style elements using inline CSS.</p>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Here is the title that will display on the tab of the page in our browser.-->
+    <title>UAT Space Program</title>
+    <!--Links to the corresponding JavaScript files.-->
+    <script src="Code.js"></script>
+    <script src="DataLoader.js"></script>
+    <script src="SpaceProgram.js"></script>
+</head>
+
+<!--Below we style the body using inline CSS-->
+<Body style="background-image: url(UATspaceLogo-2.jpg); background-repeat: no-repeat; background-position: top left;">
+
+    <!--Below, we are creating a table, giving it an id and class so it may communicate with the data loader, and styling it using inline CSS.-->
+    <table class="table2" style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id="data" border="2" width="75%" style= "border-color:rgb(38, 0, 88);">
+        <!--Here we are styling our columns using inline.-->
+        <col style="width: 37.5%;">
+        <col style="width: 37.5%;">
+        <!--Here we are creating a table head and inserting table rows and table headers that will display our two table data categories.-->
+        <thead style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:black; font-weight:900;
+       -webkit-text-stroke-color: black; -webkit-text-stroke-width: 1px;">
+          <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          <th align="left">Data Type</th>
+          <th align="left">Reading</th>
+          </tr>
+      </thead>
+      <!--Here we are creating the table body and inserting rows with each of the data points we would like to update.-->
+      <!--We link each row to our JS functions using an id.-->
+      <tbody>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id="seconds"></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=latitude></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=longitude></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=gps_altitude></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=bmpSensor_altitude></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=bmpSensor_pressure></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=bmpSensor_temp></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=digSensor_temp></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=cssSensor_temp></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=cssSensor_eCO2></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=cssSensor_TVOC></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=UV></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=accelX></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=accelY></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=accelZ></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=magneticX></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=magneticY></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=magneticZ></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=gyroX></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=gyroY></tr>
+        <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id=gyroZ></tr>
+      </tbody>
+      </table>
+    <p>
+<!--Below is the button to start the data loader, disable the start button, & enable the stop button.-->
+<input style="border-radius: 200px; border-color: rgb(41, 185, 96); border-width: 3px; font-family: fantasy;" 
+type="button" style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id= "startButton" value="Start" class="button" onclick="DisableStart()"></input>
+
+<!--Below is the button to stop the data loader, disable the stop button, & enable the start button-->
+<input style="border-radius: 200px; border-color: rgb(41, 185, 96); border-width: 3px; font-family: fantasy;"
+ type="button" style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id= "stopButton" value= "Stop" class="button" onclick="DisableStop()"></input>
+
+<!--Below is the button to play the audio file "Lost In Space Theme Song" using the function in our SpaceProgram.JS file: "PlayLostInSpace."-->
+<input style="border-radius: 200px; border-color: rgb(41, 185, 96); border-width: 3px; font-family: fantasy;" 
+type="button" value="Play Lost In Space" onclick="PlayLostInSpace()"></input>
+    </p>
+    <!--Here we are making another table to display the time using the table head and the id "time."-->
+    <table class="table3">
+        <thead>
+            <tr>
+                <th style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The time is :</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr style="color: black; -webkit-text-stroke-color:rgb(0, 21, 88); -webkit-text-stroke-width: .4px; 
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"id="time">
+            </tr>
+        </tbody>
+    </table>
+    <!--Button linking back to the landing page.-->
+    <button style="border-radius:200px;"><a href="Index.html">Back to home page</a></button>
+</body>
+<script>
+    // Global variables
+    var theTime = new Date();
+    var tempTime = new Date();
+    var time_interval = 5000;
+    var last_iteration = 0;
+    var running = true;
+    var index = 0;
+    var timer;
+
+    // Load our data into our array
+    var data = getData();
+
+    /***************************************************************************************
+     * Functions
+     ****************************************************************************************/
+    function updateDisplay() {
+        theTime = new Date();
+        // Debugging
+        console.log(
+            "Display : " +
+            (theTime.getHours() < 10 ? "0" + theTime.getHours() : theTime.getHours()) +
+            ":" + (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes()) +
+            ":" + (theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds())
+        );
+
+        // Now update the document
+        var timeRead = data[index].time_seconds;
+        if (timeRead >= 10) {
+            document.getElementById("data").rows["seconds"].innerHTML = dataRow("Time elapsed", data[index]
+                .time_seconds, "seconds");
+            document.getElementById("data").rows["latitude"].innerHTML = dataRow("Latitud", data[index].latitude, " ");
+            document.getElementById("data").rows["longitude"].innerHTML = dataRow("Longltude", data[index].longitude,
+                " ");
+            document.getElementById("data").rows["gps_altitude"].innerHTML = dataRow("GPS Altitude", data[index]
+                .gps_altitude, " ");
+            document.getElementById("data").rows["bmpSensor_altitude"].innerHTML = dataRow("BMP Sensor Altitude", data[
+                index].bmpSensor_altitude, "");
+            document.getElementById("data").rows["bmpSensor_pressure"].innerHTML = dataRow("BMP Sensor Pressure", data[
+                index].bmpSensor_pressure, "");
+            document.getElementById("data").rows["bmpSensor_temp"].innerHTML = dataRow("BMP Sensor Temperature", data[
+                index].bmpSensor_temp, "");
+            document.getElementById("data").rows["digSensor_temp"].innerHTML = dataRow("Digital Sensor Temperature",
+                data[index].digSensor_temp, "");
+            document.getElementById("data").rows["cssSensor_temp"].innerHTML = dataRow("CSS Sensor Temperature", data[
+                index].cssSensor_temp, "");
+            document.getElementById("data").rows["cssSensor_eCO2"].innerHTML = dataRow("CSS Sensor eCO2", data[index]
+                .cssSensor_eCO2, "");
+            document.getElementById("data").rows["cssSensor_TVOC"].innerHTML = dataRow("CSS Sensor TVOC", data[index]
+                .cssSensor_TVOC, "");
+            document.getElementById("data").rows["UV"].innerHTML = dataRow("UV", data[index].UV, " ");
+            document.getElementById("data").rows["accelX"].innerHTML = dataRow("Accel X", data[index].accelX, " ");
+            document.getElementById("data").rows["accelY"].innerHTML = dataRow("Accel Y", data[index].accelY, " ");
+            document.getElementById("data").rows["accelZ"].innerHTML = dataRow("Accel Z", data[index].accelZ, " ");
+            document.getElementById("data").rows["magneticX"].innerHTML = dataRow("Magnetic X", data[index].magneticX,
+                " ");
+            document.getElementById("data").rows["magneticY"].innerHTML = dataRow("Magnetic Y", data[index].magneticY,
+                " ");
+            document.getElementById("data").rows["magneticZ"].innerHTML = dataRow("Magnetic Z", data[index].magneticZ,
+                " ");
+            document.getElementById("data").rows["gyroX"].innerHTML = dataRow("Gyro X", data[index].gyroX, " ");
+            document.getElementById("data").rows["gyroY"].innerHTML = dataRow("Gyro Y", data[index].gyroY, " ");
+            document.getElementById("data").rows["gyroZ"].innerHTML = dataRow("Gyro Z", data[index].gyroZ, " ");
+
+            if (index < 499) {
+                index++;
+            } else {
+                index = 0;
+            }
+        }
+
+        document.getElementById("time").innerHTML =
+            (theTime.getHours() < 10 ? "0" + theTime.getHours() : theTime.getHours()) +
+            ":" + (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes()) +
+            ":" + (theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds());
+
+
+    }
+
+    // Stop the timer
+    function stop() {
+        clearInterval(timer);
+        document.getElementById("startButton").disabled = false;
+        document.getElementById("stopButton").disabled = true;
+    }
+
+    // Start the timer
+    function start() {
+        document.getElementById("data").rows["seconds"].innerHTML = "Reading data...";
+        index = 0;
+        timer = setInterval(updateDisplay, time_interval);
+        document.getElementById("startButton").disabled = true;
+        document.getElementById("stopButton").disabled = false;
+    }
+</script>
+</html>
